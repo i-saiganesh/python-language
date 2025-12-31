@@ -35,3 +35,43 @@ print(f"Converted age to float: {age}")
 
 # To Print the data type, we use type():
 print(f"The data type of 'name' is: {type(name)}")
+
+#Accept user input
+name = input("What's your name buddy?? :")
+weight = int(input("How much do you weigh?? :"))
+height = float(input("Height?? :"))
+print("So,You are"+name+".")
+print("You weigh "+str(weight)+"Kgs")
+print("Your height"+str(height)+"cms")
+
+#Math Functions
+import math
+
+pi = 3.14
+x = 1
+y = 2
+z = 3
+
+# round() → Rounds a number to the nearest integer
+print(round(pi))
+
+# math.ceil() → Rounds a number UP to the nearest integer
+print(math.ceil(pi))
+
+# math.floor() → Rounds a number DOWN to the nearest integer
+print(math.floor(pi))
+
+# abs() → Returns the absolute (positive) value of a number
+print(abs(pi))
+
+# pow() → Raises a number to the power of another number
+print(pow(pi, 2))
+
+# math.sqrt() → Returns the square root of a number
+print(math.sqrt(420))
+
+# max() → Returns the largest value among the given arguments
+print(max(x, y, z))
+
+# min() → Returns the smallest value among the given arguments
+print(min(x, y, z))
