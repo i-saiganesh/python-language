@@ -40,7 +40,7 @@ print(f"The data type of 'name' is: {type(name)}")
 name = input("What's your name buddy?? :")
 weight = int(input("How much do you weigh?? :"))
 height = float(input("Height?? :"))
-print("So,You are"+name+".")
+print("So,You are "+name+".")
 print("You weigh "+str(weight)+"Kgs")
 print("Your height"+str(height)+"cms")
 
@@ -75,3 +75,72 @@ print(max(x, y, z))
 
 # min() → Returns the smallest value among the given arguments
 print(min(x, y, z))
+
+#String Indexing and Slicing , START:STOP:STEP
+#Indexing-Acessing Characters-One or More at a Time
+name = "sai ganesh s"
+letter = name[2:10]
+is_letter = name[:6]
+also_letter = name[4:]
+#STOP in Indexing
+hi_letter = name[1:5:2]
+oyy_letter = name[::3]
+hey_letter = name[::-2]
+#SLICING-Cutting the characters off
+mail = "mailto:ganesh@fake.in"
+slice = slice(7,-3)
+
+print(letter)
+print(is_letter)
+print(also_letter)
+print(hi_letter)
+print(oyy_letter)
+print(hey_letter)
+print(mail[slice])
+
+#IF,ELSE,ELIF STATEMENTS
+
+age = int(input("Nee vayasu entha?? : "))
+if age >=18:
+    print("Nuv Magadu ra Bujji!")
+elif age<0:
+    print("BaneExtralu...")
+elif 13<= age <=17:
+    print("Niku Untadhi!")
+else:
+    print("Pillara Meerantha!")
+
+#LOGICAL OPERATORS: and, or , not
+money = int(input("Entha Dabbulu Unnayi : $"))
+
+if money >= 0 and not (money > 2000):
+    print("Parledu , Unnayi anthey...")
+elif money > 2000 and not (money >= 10000):
+    print("Meerante Unnollu Bayya...")
+elif money >= 10000:
+    print("Koteswarudu ra Mee nanna!")
+#OR WASN'T USED HERE BUT IT CAN BE USED LIKE THIS:
+if money < 0 or money > 100000:
+    print("Invalid amount")
+
+#While Loop-A while loop keeps running a block of code as long as a condition is true.(Unlimited Attempts)
+name = ""
+
+while len(name) == 0:
+    name = input("Enter your name: ")
+
+print("Hello " + name)
+
+#For Loop-The numbers start from 100 goes till 500 , Increments by 3 times each
+for i in range(100,500,3):
+  print(i)
+#for loop using strings
+for i in "Ganesh":
+  print(i)
+  
+#Happy New Year : 10,9,...,1 , Happy New Year
+import time 
+for i in range(10,0,-1):
+ print(i)
+ time.sleep(1)
+print("HAPPY NEW YEAR")
