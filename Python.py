@@ -144,3 +144,66 @@ for i in range(10,0,-1):
  print(i)
  time.sleep(1)
 print("HAPPY NEW YEAR")
+
+# Nested loops: the inner loop completes all its iterations for each single iteration of the outer loop
+
+rows = int(input("How many rows?: "))
+columns = int(input("How many columns?: "))
+symbol = input("Enter a symbol to use: ")
+
+for i in range(rows):
+    for j in range(columns):
+        print(symbol, end="")
+    print()
+
+# LOOP CONTROL STATEMENTS
+
+# break → Terminates the loop completely
+for i in range(1, 10):
+    if i == 5:
+        break
+    print(i)
+
+
+# continue → Skips the current iteration and moves to the next one
+for i in range(1, 10):
+    if i == 5:
+        continue
+    print(i)
+
+
+# pass → Does nothing, used as a placeholder
+for i in range(1, 10):
+    if i == 5:
+        pass
+    else:
+        print(i)
+
+# List = used to store multiple items in a single variable
+
+manishi = ["pappa", "yerripappa", "konderripappa", "tikkalodu"]
+
+# Change item at a specific index
+manishi[0] = "Goppodu"
+
+# append() = adds an item to the end of the list
+manishi.append("relangi mava")
+
+# remove() = removes a specific item by value
+manishi.remove("konderripappa")
+
+# pop() = removes the last item from the list
+manishi.pop()
+
+# insert() = inserts an item at a specific index
+manishi.insert(0, "mentalnakoduku")
+
+# sort() = arranges the list items in ascending order
+manishi.sort()
+
+# clear() = removes all items from the list
+# manishi.clear()
+
+# for loop = prints each item in the list one by one
+for x in manishi:
+    print(x)
